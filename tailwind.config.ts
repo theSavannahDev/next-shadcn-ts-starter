@@ -76,5 +76,5 @@ module.exports = {
       opensans: "'Open Sans', sans-serif",
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("@tailwindcss/typography"), require("tailwindcss-animate")],
 };
