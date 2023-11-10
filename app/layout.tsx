@@ -20,12 +20,8 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: Children) => {
   return (
     <html lang="en">
-      <body className="font-opensans scroll-smooth antialiased">
-        <header>Header Section</header>
-
-        <main>{children}</main>
-
-        <footer>Footer Section</footer>
+      <body className="scroll-smooth font-opensans antialiased">
+        {children}
       </body>
     </html>
   );
