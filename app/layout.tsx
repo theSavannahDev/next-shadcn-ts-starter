@@ -8,10 +8,6 @@ type Children = {
 };
 
 export const metadata: Metadata = {
-  icons: {
-    icon: "/logo.png",
-    shortcut: "/logo/png",
-  },
   title: "Next.JS Starter Template App",
   description:
     "Starter template for Next.JS projects using TypeScript and Shadcn/UI.",
