@@ -1,5 +1,7 @@
+import { Container } from "@/components/generic/container";
+
 const DashboardPage = () => {
-  return <div>Dashboard Page</div>;
+  return <section>Dashboard Page</section>;
 };
 
 export default DashboardPage;

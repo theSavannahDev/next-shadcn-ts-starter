@@ -2,11 +2,11 @@ import { ReactNode } from "react";
 
 import { Container } from "@/components/generic/container";
 
-type DashboardLayoutProps = {
+type LandingLayoutProps = {
   children: ReactNode;
 };
 
-const DashboardLayout = ({ children }: DashboardLayoutProps) => {
+const AuthLayout = ({ children }: LandingLayoutProps) => {
   return (
     <Container>
       <div className="min-h-screen">
@@ -18,4 +18,4 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
   );
 };
 
-export default DashboardLayout;
+export default AuthLayout;
