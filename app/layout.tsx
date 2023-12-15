@@ -1,9 +1,9 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import type { Metadata } from "next";
 
-import { TanstackProvider } from "@/lib/providers/tanstack-provider";
-import { ThemeProvider } from "@/lib/providers/theme-provider";
 import { ToastProvider } from "@/lib/providers/toast-provider";
+
+import { Container } from "@/components/container";
 
 import "@/app/styles/globals.css";
 
@@ -24,11 +24,21 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en">
-      <body className="scroll-smooth font-opensans antialiased">
-        <TanstackProvider>
-          {children}
-          <ToastProvider />
-        </TanstackProvider>
+      <body className="flex h-screen flex-col scroll-smooth font-display antialiased">
+        <header>
+          <Container>Header Section</Container>
+        </header>
+
+        <main className="relative overflow-hidden">
+          <Container>
+            {children}
+            <ToastProvider />
+          </Container>
+        </main>
+
+        <footer className="mt-auto">
+          <Container>Footer Section</Container>
+        </footer>
       </body>
     </html>
   );
